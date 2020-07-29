@@ -140,14 +140,14 @@
         "static-this": true,
         "strict-boolean-expressions": true,
         "strict-string-expressions": true,
-        "strict-comparisons": true,
+        "strict-comparisons": [true, { "allow-string-order-comparison": true }],
         "strict-type-predicates": true,
         "switch-default": true,
         "triple-equals": true,
         "unnecessary-constructor": true,
         "use-default-type-parameter": true,
         "use-isnan": true,
-        "cyclomatic-complexity": true,
+        "cyclomatic-complexity": [true, 20],
         "eofline": true,
         "indent": [true, "spaces", 4],
         "invalid-void": true,
@@ -209,7 +209,6 @@
         "object-literal-shorthand": true,
         "one-line": {
             "options": [
-                "check-catch",
                 "check-finally",
                 "check-open-brace",
                 "check-whitespace"

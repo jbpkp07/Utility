@@ -1,0 +1,10 @@
+# Dependency directory
+**/node_modules
+
+# OS metadata
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# NPM
+package-lock.json

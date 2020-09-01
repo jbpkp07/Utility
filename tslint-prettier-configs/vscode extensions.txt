@@ -1,0 +1,1 @@
+"TSLint ^1.2.3", "Prettier - Code formatter ^5.5.0"

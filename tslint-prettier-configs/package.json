@@ -1,0 +1,23 @@
+{
+    "name": "pick-a-name",
+    "version": "1.0.0",
+    "description": "Package file containing global dependencies",
+    "author": "",
+    "license": "MIT",
+    "directories": {},
+    "scripts": {
+        "tslint-check": "npx tslint --config ./tslint.json --project ./tsconfig.json --force",
+        "tslint-fix-once": "npx tslint --config ./tslint.json --project ./tsconfig.json --force --fix",
+        "tslint-fix-twice": "npm run tslint-fix-once -s && npm run tslint-fix-once -s",
+        "prettier-check": "npx prettier --check .",
+        "prettier-format": "npx prettier --write .",
+        "fix-and-format": "npm run tslint-fix-twice -s && npm run prettier-format -s && npm run prettier-check -s"
+    },
+    "devDependencies": {
+        "prettier": "2.0.5",
+        "tslint": "^6.1.3",
+        "tslint-config-prettier": "^1.18.0",
+        "tslint-react": "^5.0.0",
+        "typescript": "^3.9.7"
+    }
+}

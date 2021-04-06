@@ -32,23 +32,12 @@
             }
         ],
         "no-namespace": [true, "allow-declarations"],
-        "no-non-null-assertion": true,
         "no-restricted-globals": true,
         "no-this-assignment": true,
         "no-var-requires": false,
         "prefer-readonly": true,
         "promise-function-async": true,
-        "typedef": [
-            true,
-            "call-signature",
-            "arrow-call-signature",
-            "parameter",
-            "arrow-parameter",
-            "property-declaration",
-            "variable-declaration",
-            "variable-declaration-ignore-function",
-            "member-variable-declaration"
-        ],
+        "typedef": [true, "parameter", "arrow-parameter", "property-declaration", "member-variable-declaration"],
         "await-promise": true,
         "ban-comma-operator": true,
         "curly": [true, "ignore-same-line"],
@@ -62,27 +51,30 @@
         "no-dynamic-delete": true,
         "no-empty": false,
         "no-for-in-array": true,
-        "no-implicit-dependencies": [true, "dev"],
         "no-inferred-empty-object-type": true,
         "no-invalid-template-strings": true,
-        "no-null-undefined-union": true,
-        "no-object-literal-type-assertion": true,
         "no-promise-as-boolean": true,
         "no-return-await": true,
         "no-string-literal": false,
         "no-sparse-arrays": true,
-        "no-submodule-imports": true,
+        "no-submodule-imports": [
+            true,
+            "aws-lambda-router/lib/proxyIntegration",
+            "aws-sdk/lib/request",
+            "mysql2/promise",
+            "office-ui-fabric-react",
+            "shaka-player"
+        ],
         "no-tautology-expression": true,
         "no-unbound-method": [true, { "whitelist": ["expect"] }],
         "no-unnecessary-class": {
             "options": ["allow-empty-class"]
         },
-        "no-unused-variable": [true, "check-parameters"],
         "no-void-expression": [true, "ignore-arrow-function-shorthand"],
+        "no-unused-variable": [true, "check-parameters"],
         "radix": false,
         "restrict-plus-operands": true,
         "static-this": true,
-        "strict-boolean-expressions": true,
         "strict-string-expressions": true,
         "strict-comparisons": [
             true,
@@ -106,7 +98,6 @@
         "no-duplicate-imports": true,
         "no-mergeable-namespace": true,
         "no-parameter-reassignment": true,
-        "object-literal-sort-keys": [true, "ignore-case", "locale-compare"],
         "arrow-return-shorthand": [true],
         "binary-expression-operand-order": true,
         "comment-type": {
@@ -115,7 +106,6 @@
         "deprecation": true,
         "encoding": true,
         "file-name-casing": [true, "camel-case", "pascal-case"],
-        "interface-name": true,
         "interface-over-type-literal": true,
         "match-default-export-name": true,
         "newline-before-return": true,
@@ -124,7 +114,6 @@
         "no-redundant-jsdoc": true,
         "no-unnecessary-callback-wrapper": true,
         "no-unnecessary-qualifier": true,
-        "no-unnecessary-type-assertion": true,
         "ordered-imports": [
             true,
             {
@@ -172,8 +161,7 @@
         "jsx-no-string-ref": true,
         "jsx-self-close": true,
         "jsx-use-translation-function": false,
-        "jsx-whitespace-literal": true,
-        "react-no-unnecessary-fragment": true
+        "jsx-whitespace-literal": true
     },
     "rulesDirectory": []
 }
